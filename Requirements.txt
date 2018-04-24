@@ -1,0 +1,14 @@
+Python Development Version: 
+
+3.6.2
+
+Required Additional Python Libraries:
+
+1) Python for Windows (pywin32) Extensions - https://github.com/mhammond/pywin32
+2) Requests - http://docs.python-requests.org/en/master/
+
+
+Important Notes:
+
+* Config_AGO_Usage.cfg, DepartmentList.csv, Template.xlsx, Log folder, RawOutput folder, Reports folder & SubReports folder MUST
+   be in the same folder as AGO_USAGE.py
