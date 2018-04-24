@@ -1,2 +1,2 @@
-# arcgis-online-usage
-Reports basic information about, including the # of views (requests), for items in an ArcGIS Online org.
+# ArcGIS-Online-Usage
+Script pulls basic information about, including the number of views (requests) over the previous 60 days, for each item in the PHL ArcGIS Online Organization. Information is then filtered and formatted into an easy to use report.
