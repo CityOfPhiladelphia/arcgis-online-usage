@@ -294,18 +294,8 @@ try:
     report = '{0}_{1}.xlsx'.format(config['FileNames']['xlsxReport'], reportDate)
     dictDepartment = {}
     dictAGOUsers = {}
-    '''
-    The following three variables ['endTime', 'startTime', 'period'] are used to configure the amount time frame used to
-    generate usage stats.
-
-    By default, endTime is set to the current time when the variable is declared.  startTime is set to 7 days prior to
-    endTime.  period determines how many bins would be in the usage chart being scraped.  For example, by default, this
-    script is scraping the usage chart for each items' use for the last seven days, split out by day.
-
-    startTime and endTime are in epoch/UNIX time (milliseconds).  It is expected that period can be set to d, h, m, s.
-    '''
     endTime = int(time.time()) * 1000
-    startTime = endTime - 5184000000
+    startTime = endTime - (int(config['Query']['days']) * 86400000)
     period = '1d'
 except:
     errorhandler('The script failed in the Setting Parameters region.')
